@@ -16,19 +16,6 @@
  ----------------------------------------*****/
 
 
-/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
-
-@import url(css/animate.min.css);
-@import url(css/normalize.css);
-@import url(css/icomoon.css);
-@import url(css/font-awesome.min.css);
-@import url(css/meanmenu.css);
-@import url(css/owl.carousel.min.css);
-@import url(css/swiper.min.css);
-@import url(css/slick.css);
-@import url(css/jquery.fancybox.min.css);
-@import url(css/jquery-ui.css);
-@import url(css/nice-select.css);
 @font-face {
      font-family: 'cochinroman';
      src: url('../fonts/cochin.woff2') format('woff2'), url('../fonts/cochin.woff') format('woff');
@@ -318,12 +305,13 @@ button {
 /** banner section **/
 
 .banner_main {
-     background: url(../images/banner.jpg);
+     background-image: linear-gradient(290deg, #0d67dc 50%, #08be88 100%);
      background-repeat: no-repeat;
-     min-height: 862px;
+     min-height: 825px;
      background-position: center center;
      background-size: 100% 100%;
      padding-top: 150px;
+     padding-bottom: 30px;
      position: relative
 }
 
@@ -332,8 +320,8 @@ button {
      content: "";
      bottom: 0px;
      width: 100%;
-     height: 300px;
-     background: url(../images/banner_cr0ssbottom.png);
+     height: 250px;
+     background: url(../images/banner_cross.png);
      background-repeat: no-repeat;
      background-size: 100% 100%;
 }
@@ -608,7 +596,7 @@ button {
 /** choose section **/
 
 .choose {
-     background: url(../images/why.jpg);
+     background-image: linear-gradient(150deg, #0d67dc 10%, #08be88 65%);
      background-size: 100% 100%;
      background-position: left;
      background-repeat: no-repeat;
@@ -830,12 +818,24 @@ label {
 /** footer **/
 
 .footer {
-     background: url(../images/footer_bg.png);
+     background-image: linear-gradient(245deg, #0d67dc 15%, #08be88 95%);
      background-size: 100% 100%;
      background-position: left;
      background-repeat: no-repeat;
      padding-top: 153px;
      text-align: center;
+}
+
+.footer::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    margin-top: -155px;
+    height: 125px;
+    background: url(../images/footer_cross.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .footer .titlepage {
